@@ -1,8 +1,8 @@
 ### `LIVE-WEBSITE` hosted on https://movie-wish.netlify.app .
 
-###-->`NOTE` website is hosted by using free hosting services, sometimes reponses are slow.
+### `NOTE-->` website is hosted by using free hosting services, sometimes reponses are slow.
 
-This site is right now only suitable  for desktop, please open it on desktop have a better preview.
+This site is right now only suitable for desktop, so please open it on desktop to have a better preview.
 
 ###`BACKEND` is hosted on HEROKU on `https://movie-wish-backend.herokuapp.com/`.
 
@@ -13,17 +13,17 @@ This site is right now only suitable  for desktop, please open it on desktop hav
 
 --> Open your Terminal in Server Directory.
 
---> run ## `npm install`
+--> run `npm install`
 
---> run ### `npm start`
+--> run `npm start`
 
 
 # Now , Clone fronted-end repo from `https://github.com/KindlyEvil/movie-wish-frontEnd-fasal.git`
 
 --> Open your Terminal in `Movie-wish-frontEnd-fasal` Directory.
 
---> run ## `npm install`
+--> run  `npm install`
 
---> run ### `npm start`
+--> run  `npm start`
 
 ### Site is runnimg Locally!!!!!!
