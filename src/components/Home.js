@@ -3,10 +3,24 @@ import searchIMG from '../Assests/searchImg.gif';
 import ImgNotFound from '../Assests/ImgNotFound.gif';
 import BrandLogo from '../Assests/BrandLogo.png';
 import MovieCard from './MovieCard';
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 //import jwt from 'jsonwebtoken';
 
 function Home(props) {
+    const navigate = useNavigate();
+    const token = localStorage.getItem('token');
+    useEffect(() => {
+        if (!token) {
+            navigate('/login');
+        }
+    }, [])
+
+    function handleLogOut(e) {
+        e.preventDefault();
+        localStorage.removeItem('token');
+        navigate('/login');
+    }
+
 
     const [search, setSearch] = useState("");
 
@@ -31,6 +45,11 @@ function Home(props) {
                             <img src={BrandLogo} alt="" width="50" height="40" />
                             Movie-Wish
                         </Link>
+
+                        <div className="nav-item text-light me-auto mb-2 mb-lg-0">
+                            <button className="btn btn-danger" style={{ marginLeft: "1cm" }} onClick={handleLogOut} >Logout</button>
+                        </div>
+
                         <Link className='navbar-brand' to='/watchlist' style={{ marginLeft: "55rem" }}>Watch List</Link>
                         <form className="d-flex" role="search" >
                             <input className="form-control me-2"
@@ -57,10 +76,10 @@ function Home(props) {
                                     <div className='col-3' key={index}>
                                         <MovieCard key={index} Poster={val.Poster} Title={val.Title} Year={val.Year} imdbID={val.imdbID} />
                                     </div>
-                                ) : <div><h1 className='position-absolute top-50 start-50 translate-middle' style={{ color: "#dc3545",fontWeight:"bolder" }}>No search result found !!!</h1>
+                                ) : <div><h1 className='position-absolute top-50 start-50 translate-middle' style={{ color: "#dc3545", fontWeight: "bolder" }}>No search result found !!!</h1>
                                     <img className='imageSearch' src={ImgNotFound} alt="search-png" style={{ height: "250px" }} />
                                 </div> : <div>
-                                <h1 className='position-absolute top-50 start-50 translate-middle' style={{ color: "#dc3545", fontWeight:"bolder"}}>Search Your Favourite Movies!!!</h1>
+                                <h1 className='position-absolute top-50 start-50 translate-middle' style={{ color: "#dc3545", fontWeight: "bolder" }}>Search Your Favourite Movies!!!</h1>
                                 <img className='imageSearch' src={searchIMG} alt="search-png" style={{ height: "250px" }} />
                             </div>
                     }

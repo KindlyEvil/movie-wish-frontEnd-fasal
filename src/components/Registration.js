@@ -60,7 +60,7 @@ function Registration() {
 
                 <div className="form-floating mb-3 mt-4">
                     <input type="email"
-                        className="form-control" id="floatingInput"
+                        className="form-control" id="floatingInput-1"
                         placeholder="name@example.com"
                         variant="outlined"
                         value={email}
