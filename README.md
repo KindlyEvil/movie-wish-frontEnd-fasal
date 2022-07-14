@@ -1,4 +1,4 @@
-### `LIVE-WEBSITE` hosted on `https://movie-wish.netlify.app`.
+### `LIVE-WEBSITE` hosted on https://movie-wish.netlify.app .
 
 This site is right now only suitable  for desktop, please open it on desktop have a better preview.
 
