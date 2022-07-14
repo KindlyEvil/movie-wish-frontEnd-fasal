@@ -1,5 +1,7 @@
 ### `LIVE-WEBSITE` hosted on https://movie-wish.netlify.app .
 
+###-->`NOTE` website is hosted by using free hosting services, sometimes reponses are slow.
+
 This site is right now only suitable  for desktop, please open it on desktop have a better preview.
 
 ###`BACKEND` is hosted on HEROKU on `https://movie-wish-backend.herokuapp.com/`.
