@@ -5,9 +5,9 @@ This site is right now only suitable  for desktop, please open it on desktop hav
 ###`BACKEND` is hosted on HEROKU on `https://movie-wish-backend.herokuapp.com/`.
 
 
-## To run the project locally in your system.
+## To run the project locally on your system.
 
-## clone Server from `https://github.com/KindlyEvil/movie-wish-backEnd-fasal.git`
+## clone the Server from `https://github.com/KindlyEvil/movie-wish-backEnd-fasal.git`
 
 --> Open your Terminal in Server Directory.
 
