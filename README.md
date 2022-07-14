@@ -11,7 +11,7 @@ This site is right now only suitable for desktop, so please open it on desktop t
 
 ## clone the Server from `https://github.com/KindlyEvil/movie-wish-backEnd-fasal.git`
 
---> Open your Terminal in Server Directory.
+--> Open your Terminal inside the Server Directory.
 
 --> run `npm install`
 
@@ -20,7 +20,7 @@ This site is right now only suitable for desktop, so please open it on desktop t
 
 # Now , Clone fronted-end repo from `https://github.com/KindlyEvil/movie-wish-frontEnd-fasal.git`
 
---> Open your Terminal in `Movie-wish-frontEnd-fasal` Directory.
+--> Open your Terminal inside the `Movie-wish-frontEnd-fasal` Directory.
 
 --> run  `npm install`
 
